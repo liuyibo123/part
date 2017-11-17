@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="备份和恢复"/>
+    <title>备份和恢复</title>
+
+</head>
+<body>
+<h1>备份和恢复</h1>
+
+<form action="/recover" method="post" role="form" enctype="multipart/form-data">
+    <div class="form-group">
+        <input type="file" class="form-control" name="file" id="file" placeholder="选择文件..."/>
+    </div>
+    <button type="submit" class="btn btn-primary">上传并恢复</button>
+</form>
+<br/>
+<form action="/backup" method="get">
+    <button type="submit" class="btn btn-primary">备份</button>
+</form>
+
+
+</body>
+</html>
